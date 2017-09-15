@@ -1,0 +1,5 @@
+构造两个链表，bigger和smaller
+依次遍历原链表，并和x进行比较，
+如果val < x,则放入smaller结尾
+如果val >= x,则放入bigger结尾
+最终将smaller和bigger相连，并返回
