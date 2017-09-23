@@ -1,0 +1,10 @@
+方法1：常规做法，使用最原始的map，
+sum方法，依次取出所欲key，当key.beginWith(prefix) == true时，
+将对应当val值求和，随着map的size：n 增大，所需时间复杂度为O(n*n)
+
+方法2：空间换时间
+定义两个map： sumMap 和 map
+map维护着key对应的旧的val值，sumMap维护着所有前缀对应的sum值
+insert方法实现，将key的每一个前缀在插入的时候都从新设值（当前值 - 旧val + val），
+放入sumMap中
+sum方法实现，直接从sumMap中取出对应值
