@@ -6,7 +6,7 @@ public class Solution20 {
 
     public static void main(String[] args) {
         Solution20 s = new Solution20();
-        System.out.println(s.isValid("asdfa{}"));
+        System.out.println(s.isValid("()"));
 
     }
 
@@ -39,9 +39,7 @@ public class Solution20 {
                         break;
                 }
             }
-
             return stack.isEmpty();
-
         } catch (Exception e) {
             return false;
         }
