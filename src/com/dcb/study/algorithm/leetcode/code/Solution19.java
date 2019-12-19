@@ -56,14 +56,15 @@ public class Solution19 {
      * @return 删除后的链表
      */
     public ListNode removeNthFromEnd2(ListNode head, int n) {
-        if (head == null) return head;
+        if (head == null)
+            return null;
 
         // 构造虚拟头节点，规避删除头节点的情况
-        ListNode prehead = new ListNode(0);
-        prehead.next = head;
+        ListNode preHead = new ListNode(0);
+        preHead.next = head;
         // 构造左右节点，将右节点向后移动n位
-        ListNode lNode = prehead;
-        ListNode rNode = prehead;
+        ListNode lNode = preHead;
+        ListNode rNode = preHead;
         for (int i = 0; i < n; i++) {
             rNode = rNode.next;
         }
@@ -76,6 +77,6 @@ public class Solution19 {
         }
 
         lNode.next = lNode.next.next;
-        return prehead.next;
+        return preHead.next;
     }
 }
