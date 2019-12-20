@@ -15,8 +15,6 @@ public class Solution19 {
         d.next = e;
         System.out.println(s.removeNthFromEnd(a, 2));
         System.out.println(s.removeNthFromEnd2(a, 2));
-
-
     }
 
     /**
@@ -30,21 +28,21 @@ public class Solution19 {
         if (head == null) return head;
         // 获取链表长度
         int len = 1;
-        ListNode ln = head;
-        while (ln.next != null) {
+        ListNode temp = head;
+        while (temp.next != null) {
             len++;
-            ln = ln.next;
+            temp = temp.next;
         }
         // 构造虚拟头节点，规避删除头节点的情况
         ListNode preHead = new ListNode(0);
         preHead.next = head;
         // 删除节点的下标
         int index = len - n;
-        ln = preHead;
+        temp = preHead;
         for (int i = 0; i < index; i++) {
-            ln = ln.next;
+            temp = temp.next;
         }
-        ln.next = ln.next.next;
+        temp.next = temp.next.next;
         return preHead.next;
     }
 
