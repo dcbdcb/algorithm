@@ -13,7 +13,8 @@ public class Solution206 {
         b.next = c;
         c.next = d;
         d.next = e;
-        System.out.println(s.reverseList(a));
+        System.out.println(s.reverseList(s.reverseList2(s.reverseList3(a))));
+
     }
 
     /**
