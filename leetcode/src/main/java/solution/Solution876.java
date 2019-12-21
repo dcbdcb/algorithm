@@ -1,6 +1,4 @@
-package com.dcb.study.algorithm.leetcode.code;
-
-import java.util.List;
+package solution;
 
 public class Solution876 {
 
