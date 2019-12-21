@@ -26,7 +26,7 @@ public class ListNode {
         if (this.next == null) {
             return String.valueOf(this.val);
         }
-        System.out.println(this.val);
+        System.out.print(this.val + "->");
         return this.next.toString();
     }
 }
