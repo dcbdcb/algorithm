@@ -1,7 +1,5 @@
 package com.dcb.study.algorithm.leetcode.code;
 
-import java.util.List;
-
 public class Solution92 {
 
     public static void main(String[] args) {
