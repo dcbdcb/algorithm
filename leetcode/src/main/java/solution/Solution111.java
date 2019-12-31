@@ -1,7 +1,5 @@
 package solution;
 
-import sun.reflect.generics.tree.Tree;
-
 public class Solution111 {
 
     public static void main(String[] args) {
