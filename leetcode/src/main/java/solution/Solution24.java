@@ -1,4 +1,4 @@
-package com.dcb.study.algorithm.leetcode.code;
+package solution;
 
 public class Solution24 {
 
@@ -10,13 +10,16 @@ public class Solution24 {
         n1.next = n2;
         n2.next = n3;
         n3.next = n4;
-
-
         Solution24 s = new Solution24();
-        s.swapPairs(n1);
+        System.out.println(s.swapPairs(n1));
     }
 
-
+    /**
+     * 两两交换链表中的节点
+     *
+     * @param head 链表头节点
+     * @return 交换后的链表头节点
+     */
     public ListNode swapPairs(ListNode head) {
         if (head == null || head.next == null)
             return head;
@@ -31,9 +34,7 @@ public class Solution24 {
             before.next = tmp;
             before = head;
             head = head.next;
-
         }
-
         return headNew.next;
     }
 
