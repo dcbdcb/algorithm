@@ -1,4 +1,4 @@
-package com.dcb.study.algorithm.leetcode.code;
+package solution;
 
 public class Solution278 {
 
@@ -24,7 +24,6 @@ public class Solution278 {
             tmp = a / 2 + b / 2;
         }
         return isBadVersion(tmp) ? binarySearch(a, tmp) : binarySearch(tmp, b);
-
     }
 
     public boolean isBadVersion(int n) {
