@@ -1,4 +1,4 @@
-package com.dcb.study.algorithm.leetcode.code;
+package solution;
 
 public class Solution268 {
 
@@ -6,6 +6,8 @@ public class Solution268 {
         Solution268 s = new Solution268();
         int[] a = {0, 1, 3};
         System.out.println(s.missingNumber(a));
+        int[] b = {9,6,4,2,3,5,7,0,1};
+        System.out.println(s.missingNumber(b));
     }
 
     public int missingNumber(int[] nums) {
