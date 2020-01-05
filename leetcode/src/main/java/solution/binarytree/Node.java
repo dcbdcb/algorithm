@@ -1,4 +1,4 @@
-package solution;
+package solution.binarytree;
 
 public class Node {
     public int val;

@@ -1,4 +1,4 @@
-package com.dcb.study.algorithm.leetcode.code;
+package solution;
 
 public class Solution88 {
 
@@ -12,10 +12,11 @@ public class Solution88 {
 
 
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-
+        // 先将nums1中所有元素向后移动n位
         for (int i = m; i > 0; i--) {
             nums1[n + i - 1] = nums1[i - 1];
         }
+        // 依次比较2个列表的首位元素，将较小的值，放入制定位置
         int i = 0;
         int j = 0;
         int index = 0;
@@ -29,7 +30,7 @@ public class Solution88 {
             }
             index++;
         }
-
+        // 将nums2中元素拼在最后
         while (j < n) {
             nums1[m + j] = nums2[j];
             j++;
