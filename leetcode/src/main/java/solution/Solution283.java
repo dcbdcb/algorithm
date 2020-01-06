@@ -36,7 +36,7 @@ public class Solution283 {
      * @param nums 数组
      */
     public void moveZeroes2(int[] nums) {
-        int count = 0; // 记录非0的数
+        int count = 0; // 记录非0的数的下标
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != 0) {
                 if (i == count) {
