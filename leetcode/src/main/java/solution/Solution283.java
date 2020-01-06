@@ -12,6 +12,12 @@ public class Solution283 {
         }
     }
 
+    /**
+     * 移动0到数组末尾
+     *      参照冒泡排序算法
+     *
+     * @param nums 数组
+     */
     public void moveZeroes(int[] nums) {
         for (int j = 0; j < nums.length; j++) {
             for (int i = 0; i < nums.length - 1 - j; i++) {
@@ -23,6 +29,12 @@ public class Solution283 {
         }
     }
 
+    /**
+     * 移动0到数组末尾
+     *      遍历数组，将非0的数移动到数组头部
+     *
+     * @param nums 数组
+     */
     public void moveZeroes2(int[] nums) {
         int count = 0; // 记录非0的数
         for (int i = 0; i < nums.length; i++) {
