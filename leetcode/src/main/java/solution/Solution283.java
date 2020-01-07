@@ -3,9 +3,9 @@ package solution;
 public class Solution283 {
 
     public static void main(String[] args) {
-        int[] a = new int[]{0,0, 1};
+        int[] a = new int[]{0,1,1,0, 1};
         Solution283 s = new Solution283();
-        s.moveZeroes(a);
+       // s.moveZeroes(a);
         s.moveZeroes2(a);
         for (int i = 0; i < a.length; i++) {
             System.out.print(a[i] + ",");
@@ -45,6 +45,7 @@ public class Solution283 {
                 } else {
                     nums[count] = nums[i];
                     nums[i] = 0;
+                    count++;
                 }
             }
         }
