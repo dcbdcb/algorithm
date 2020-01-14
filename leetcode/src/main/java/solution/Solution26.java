@@ -1,4 +1,4 @@
-package com.dcb.study.algorithm.leetcode.code;
+package solution;
 
 public class Solution26 {
 
@@ -9,9 +9,10 @@ public class Solution26 {
 
     }
 
-
     public int removeDuplicates(int[] nums) {
-        if (nums.length == 0) return 0;
+        if (nums.length == 0) {
+            return 0;
+        }
 
         int result = 0;
         int temp = nums[0];
