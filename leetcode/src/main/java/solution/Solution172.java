@@ -2,10 +2,8 @@ package solution;
 
 public class Solution172 {
 
-
     public static void main(String[] args) {
         Solution172 s = new Solution172();
-
         System.out.println(s.trailingZeroes(1808548329));
     }
 
@@ -20,10 +18,6 @@ public class Solution172 {
                 return result;
             }
         }
-
     }
-
-
-
 
 }
