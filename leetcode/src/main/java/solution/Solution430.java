@@ -1,5 +1,7 @@
 package solution;
 
+import solution.list.ListNode;
+
 import java.util.Arrays;
 
 public class Solution430 {

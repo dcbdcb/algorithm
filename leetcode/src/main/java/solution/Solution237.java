@@ -1,5 +1,7 @@
 package solution;
 
+import solution.list.ListNode;
+
 public class Solution237 {
 
     public static void main(String[] args) {
