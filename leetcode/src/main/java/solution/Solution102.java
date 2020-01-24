@@ -1,5 +1,7 @@
 package solution;
 
+import solution.binarytree.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

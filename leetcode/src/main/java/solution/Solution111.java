@@ -1,5 +1,7 @@
 package solution;
 
+import solution.binarytree.TreeNode;
+
 public class Solution111 {
 
     public static void main(String[] args) {

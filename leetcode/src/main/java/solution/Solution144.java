@@ -1,6 +1,7 @@
 package solution;
 
 import com.alibaba.fastjson.JSON;
+import solution.binarytree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

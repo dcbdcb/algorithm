@@ -1,4 +1,4 @@
-package solution;
+package solution.list.doubly;
 
 public class Node {
     public int val;

@@ -1,6 +1,6 @@
 package solution;
 
-import sun.reflect.generics.tree.Tree;
+import solution.binarytree.TreeNode;
 
 public class Solution617 {
 

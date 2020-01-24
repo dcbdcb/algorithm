@@ -1,6 +1,7 @@
 package solution;
 
 import solution.list.ListNode;
+import solution.list.doubly.Node;
 
 import java.util.Arrays;
 
