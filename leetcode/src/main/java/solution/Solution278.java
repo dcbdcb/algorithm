@@ -7,7 +7,6 @@ public class Solution278 {
         System.out.println(s.firstBadVersion(1690815734));
     }
 
-
     public int firstBadVersion(int n) {
         return binarySearch(1, n);
     }

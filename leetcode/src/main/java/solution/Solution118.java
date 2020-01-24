@@ -10,7 +10,6 @@ public class Solution118 {
     public static void main(String[] args) {
         Solution118 s = new Solution118();
         System.out.println(JSON.toJSONString(s.generate(5)));
-
     }
 
     public List<List<Integer>> generate(int numRows) {

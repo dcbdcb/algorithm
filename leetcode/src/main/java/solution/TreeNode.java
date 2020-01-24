@@ -7,6 +7,15 @@ public class TreeNode {
 
     TreeNode right;
 
+    public int getVal() {
+        return val;
+    }
+
+    public void setVal(int val) {
+        this.val = val;
+    }
+
+
 
     TreeNode(int x) {
         this.val = x;

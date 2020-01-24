@@ -10,7 +10,6 @@ public class Solution172 {
     public int trailingZeroes(int n) {
         int result = 0;
         while (true) {
-
             if (n / 5 > 0) {
                 result += n / 5;
                 n = n / 5;
