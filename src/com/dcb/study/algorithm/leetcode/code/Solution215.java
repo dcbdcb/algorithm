@@ -17,15 +17,13 @@ public class Solution215 {
     /**
      * 寻找数组中某段的第K大的值
      *
-     * @param nums - 数组
-     * @param start - 起始为止下标
-     * @param end - 结束为止下标
-     * @param k - 第k大的值
+     * @param nums 数组
+     * @param start 起始为止下标
+     * @param end 结束为止下标
+     * @param k 第k大的值
      * @return
      */
     private int findKthLargest(int[] nums, int start, int end, int k) {
-
-
         if (start == end) return nums[start];
 
         int i = start;
@@ -33,7 +31,6 @@ public class Solution215 {
 
         // 使用快排的思想，重新排列数组
         while (i < j) {
-
             if (nums[i] > nums[i + 1]) {
                 swapElement(nums, i + 1, j);
                 j--;
@@ -62,7 +59,6 @@ public class Solution215 {
      * @param index2 - 第二个元素下标
      */
     private void swapElement(int[] nums, int index1, int index2) {
-
         int tmp = nums[index1];
         nums[index1] = nums[index2];
         nums[index2] = tmp;
