@@ -1,11 +1,11 @@
 package solution.binarytree;
 
 public class TreeNode {
-    int val;
+    public int val;
 
-    TreeNode left;
+    public TreeNode left;
 
-    TreeNode right;
+    public TreeNode right;
 
     public int getVal() {
         return val;
@@ -15,9 +15,7 @@ public class TreeNode {
         this.val = val;
     }
 
-
-
-    TreeNode(int x) {
+    public TreeNode(int x) {
         this.val = x;
     }
 
