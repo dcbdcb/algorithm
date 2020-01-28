@@ -2,7 +2,6 @@ package solution;
 
 public class Solution476 {
 
-
     public static void main(String[] args) {
         Solution476 s = new Solution476();
         System.out.println(s.findComplement(1));
