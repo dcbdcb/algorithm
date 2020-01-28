@@ -2,12 +2,9 @@ package com.dcb.study.algorithm.leetcode.code;
 
 public class Solution551 {
 
-
     public static void main(String[] args) {
         Solution551 s = new Solution551();
         System.out.println(s.checkRecord("LLPLLPLPPLLPLPLPPPLPLPLPPPLPPP"));
-
-
     }
 
     public boolean checkRecord(String s) {
@@ -28,7 +25,6 @@ public class Solution551 {
                     return false;
             }
         }
-
         return true;
     }
 }
