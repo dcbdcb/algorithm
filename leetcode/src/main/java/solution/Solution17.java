@@ -1,4 +1,4 @@
-package com.dcb.study.algorithm.leetcode.code;
+package solution;
 
 
 import java.util.ArrayList;
@@ -15,15 +15,20 @@ public class Solution17 {
     }
 
     public List<String> letterCombinations(String digits) {
-
-        if (digits == null || digits.length() == 0) return new ArrayList();
+        if (digits == null || digits.length() == 0) {
+            return new ArrayList();
+        }
         String firstDigit = digits.substring(0, 1);
         String remains = digits.substring(1);
-        List<String> result = new ArrayList<>();
+        List<String> result = new ArrayList<String>();
         List<String> tmpList = letterCombinations(remains);
         List<String> letters = getLetters(firstDigit);
-        if (tmpList.isEmpty()) return letters;
-        if (letters.isEmpty()) return tmpList;
+        if (tmpList.isEmpty()) {
+            return letters;
+        }
+        if (letters.isEmpty()) {
+            return tmpList;
+        }
         for (String str : tmpList) {
             for (String letter : letters) {
                 result.add(letter + str);
@@ -81,7 +86,5 @@ public class Solution17 {
             default:
                 return new ArrayList<String>();
         }
-
-
     }
 }
