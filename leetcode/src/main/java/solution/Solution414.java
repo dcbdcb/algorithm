@@ -8,11 +8,6 @@ public class Solution414 {
         System.out.println(s.thirdMax(new int[] {1, 2}));
         System.out.println(s.thirdMax(new int[] {2, 2, 3, 1}));
         System.out.println(s.thirdMax(new int[] {-2147483648,-2147483648,-2147483648,-2147483648,1,1,1}));
-
-        Integer a = -2147483648;
-        Integer b = -2147483648;
-        System.out.println(a == b);
-        System.out.println(a.equals(b));
     }
 
     public int thirdMax(int[] nums) {
