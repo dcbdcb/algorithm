@@ -1,0 +1,55 @@
+package solution;
+
+import com.alibaba.fastjson.JSON;
+
+public class Solution4 {
+
+    public static void main(String[] args) {
+        Solution4 s = new Solution4();
+        System.out.println(s.findMedianSortedArrays(new int[]{1, 2}, new int[] {3}));
+        System.out.println(s.findMedianSortedArrays(new int[]{1, 3}, new int[] {2, 4}));
+    }
+
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int[] sortNums = sort(nums1, nums2);
+        int l = sortNums.length;
+        if (l % 2 == 0) {
+            return (sortNums[l / 2] + sortNums[l / 2 - 1]) / 2.0;
+        } else {
+            return sortNums[l / 2] / 1.0;
+        }
+    }
+
+    public int[] sort(int[] nums1, int[] nums2) {
+        int[] result = new int[nums1.length + nums2.length];
+        int index1 = 0;
+        int index2 = 0;
+        int index = 0;
+        while ((index1 <= nums1.length - 1) && (index2 <= nums2.length - 1)) {
+            if (nums1[index1] < nums2[index2]) {
+                result[index] = nums1[index1];
+                index1++;
+            } else {
+                result[index] = nums2[index2];
+                index2++;
+            }
+            index++;
+        }
+        if (index1 < nums1.length) {
+            for (int i = index1; i < nums1.length; i++) {
+                result[index] = nums1[index1];
+                index++;
+                index1++;
+            }
+        }
+        if (index2 < nums2.length) {
+            for (int i = index2; i < nums2.length; i++) {
+                result[index] = nums2[index2];
+                index++;
+                index2++;
+            }
+        }
+        return result;
+    }
+
+}
