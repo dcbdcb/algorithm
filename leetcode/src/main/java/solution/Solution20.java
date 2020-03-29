@@ -1,4 +1,4 @@
-package com.dcb.study.algorithm.leetcode.code;
+package solution;
 
 import java.util.Stack;
 
@@ -12,7 +12,7 @@ public class Solution20 {
 
     public boolean isValid(String s) {
         try {
-            Stack<Character> stack = new Stack<>();
+            Stack<Character> stack = new Stack<Character>();
             char[] chars = s.toCharArray();
             for (char c : chars) {
                 switch (c) {
