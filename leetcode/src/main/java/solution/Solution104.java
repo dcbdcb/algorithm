@@ -18,7 +18,12 @@ public class Solution104 {
         System.out.println(s.maxDepth(a));
     }
 
-
+    /**
+     * 求二叉树的深度
+     *
+     * @param root 根节点
+     * @return 二叉树深度
+     */
     public int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;
